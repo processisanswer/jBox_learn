@@ -1,0 +1,7 @@
+jBox全局设置
+var jBoxConfig={}
+jBoxConfig.defaults={
+ submit:function(v,h,f){return true;}//点击窗口按钮后的回调函数，返回true时表示关闭窗口，
+ 参数三个，v表示点击的按钮的返回值，h表示窗口内容的jQuery对象，f表示窗口内容里的form表单的
+ 键值（即form表单的name值）
+}
