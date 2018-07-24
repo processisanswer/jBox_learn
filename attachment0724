@@ -1,0 +1,30 @@
+1 jQuery find（）方法
+
+  find() 方法返回被选元素的后代元素。
+  后代是子、孙、曾孙，依此类推。
+  DOM 树：该方法沿着 DOM 元素的后代向下遍历，直至最后一个后代的所有路径（<html>）。如只需向下遍历 DOM 树中的单一层级（返回直接子元素），请使用 children() 方法。
+  注意：filter 参数在 find() 方法中是必需的，这与其他树遍历方法不同。
+  提示：如需返回所有的后代元素，请使用 "*" 选择器。
+  语法：$(selector).find(filter)
+  参数：filter 必需。过滤搜索后代条件的选择器表达式、元素或jQuery对象
+  注意：如需返回多个后台，请使用逗号分隔每个表达式。
+  
+2 jQuery hide()方法
+  hide() 方法隐藏被选元素。
+  提示：这与 CSS 属性 display:none 类似。
+  注释：隐藏的元素不会被完全显示（不再影响页面的布局）。
+  提示：如需显示隐藏的元素，请查看 show() 方法。
+  语法：$(selector).hide(speed,easing,callback)
+  参数：speed 可选，规定隐藏效果的速度。可能的值 毫秒数 “slow” “fast”
+        easing 可选，规定在动画的不同点上元素的速度。默认值为“swing”
+        可能的值 swing-在开头、结尾移动慢，在中间移动快
+                linear- 匀速移动
+        callback 可选，hide()方法执行完之后，要执行的函数。
+        
+3 jQuery prependTo()方法
+  prependTo()方法在被选元素的开头插入HTML元素。
+  提示：如需要在被选元素的结尾插入HTML元素，使用appendTo()方法。
+  语法：$(content).prependTo(selector)
+  参数：content 必需，规定要插入的内容,必须包含HTML标签，注意，如果content是已经存在
+        的元素，它将从当前位置被移除，并在被选元素的开头被插入。
+        selector 必需。规定把内容预加到哪个元素上。
